@@ -12,6 +12,10 @@ display: flex;
 gap: 40px;
     }
 
+    @media screen and (max-width:1080px) {
+        display: hidden;
+    }
+
     .nav1{
 height: 100%;
         display: flex;

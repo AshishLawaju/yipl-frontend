@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa";
 import heroImage from "../assets/hero.jpeg";
 import Navbar from "./Navbar";
 const Hero = () => {
@@ -11,17 +12,19 @@ const Hero = () => {
       <div className="gcover" />
 
       <Navbar />
+      <div className="hero-content container">
+        <h1 className="title">Beautiful analytics to grow smarter</h1>
 
-      <h1>
+        <h3 className="subtitle">
+          Powerful, self-serve product and growth analytics to help you convert,
+          engage,
+          <br /> and retain more users. Trusted by over 4,000 startups.
+        </h3>
 
-      Beautiful analytics to grow smarter
-      </h1>
-
-      <h3>
-      Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
-      </h3>
-
-      <button>Why Catalog?  </button>
+        <button className="hero-btn">
+          Why Catalog? <FaArrowRight />{" "}
+        </button>
+      </div>
     </section>
   );
 };

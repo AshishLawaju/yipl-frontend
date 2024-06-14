@@ -2,13 +2,14 @@
 
     width: 100%;
     height: 100vh;
+font-family: 'Poppins';
+color: white;
 
         
     background-size: cover;
     background-position: center;
     // background: linear-gradient(rgba(0, 41, 83, 0.8), rgba(0, 45, 91, 0.8));
 
-    border: 1px solid black;
     position: relative;
 
     .gcover{
@@ -17,6 +18,51 @@
             width: 100%;
     height: 100vh;
 z-index: 1;
+
+    }
+
+    .title{
+            font-weight: 600;
+            font-size: 60px;
+            text-align: center;
+    }
+    .subtitle{
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+margin-top: 24px;
+    }
+
+    .hero-content{
+        position: relative;
+        z-index: 5;
+        color: white;
+
+
+height: 77%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+
+    }
+
+    .hero-btn{
+        border:1px solid #FFE500;
+        background: transparent;
+        color: white;
+        
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 18px;
+        font-weight: 600;
+padding: 16px 28px 16px 28px;
+border-radius:  8px;
+margin-top: 48px;
+
 
     }
 }
