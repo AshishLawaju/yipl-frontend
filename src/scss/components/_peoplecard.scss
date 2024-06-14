@@ -1,0 +1,30 @@
+.peopleCard{
+
+    font-family: 'Poppins';
+    
+    .person-name{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    .person-div{
+        width: 305px;
+        height: 415px;
+        // border: 1px solid black;
+        overflow: hidden;
+        border-radius:16px;
+    }
+.person-hover{
+    transition: all 0.3s ease-in-out; 
+    object-fit: contain ;
+
+    object-position: center;
+
+}
+    .person-hover:hover{
+scale: 115%;
+// transition: all  ease-in-out ;
+
+    }
+
+}

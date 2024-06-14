@@ -4,6 +4,8 @@ import "./scss/index.scss";
 import c1 from "./components/assets/C1.png";
 import c2 from "./components/assets/C2.png";
 import c3 from "./components/assets/C3.png";
+import WhoR from "./components/Whoarewe";
+import Company from "./components/Company";
 const App = () => {
   const campData = [
     {
@@ -51,6 +53,12 @@ const App = () => {
           </div>
         </div>
       </section>
+
+      {/* 
+      who are we */}
+
+      <WhoR />
+      <Company/>
     </main>
   );
 };

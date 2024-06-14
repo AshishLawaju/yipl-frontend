@@ -12,9 +12,7 @@ display: flex;
 gap: 40px;
     }
 
-    @media screen and (max-width:1080px) {
-        display: hidden;
-    }
+  
 
     .nav1{
 height: 100%;
@@ -37,4 +35,64 @@ height: 100%;
         cursor: pointer;
             
     }
+
+
+    .sub-navbar{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        
+        
+    }
+
+    .sub-navbar-content{
+        padding:20px 24px 20px 24px ;
+        position: absolute;
+        width: 412px;
+        z-index:3;
+        top:70%
+        ;
+        background-color: white; border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .titles{
+            color: black;
+            font-size: 16px ;
+            font-weight: 600;
+            text-align: start;
+        z-index:3;
+
+        }
+
+        .subtitles
+        {
+            color:   #667085            ;
+            font-size: 14px ;
+            font-weight: 400;
+            // border: 1px solid black;
+        z-index:3;
+
+            
+
+        }
+
+        .sub-nav{
+            display: flex;
+            justify-content: start;
+        z-index:3;
+        gap: 16px;
+        }
+
+        .sub-nav-content{
+            display: flex;
+            justify-content: start;
+        z-index:3;
+        flex-direction: column;
+        }
+    }
+
+    
 }
