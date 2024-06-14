@@ -1,0 +1,36 @@
+.navbar {
+    position: relative;
+    z-index: 5;
+color: white;
+height: 80px;
+border-bottom: 1px solid white;
+    ul{
+text-decoration: none;   
+list-style-type: none;
+font-family: 'Poppins';    
+display: flex; 
+gap: 40px;
+    }
+
+    .nav1{
+height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:40px;
+        
+    }
+
+
+    .nav2{
+
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .glass{
+        cursor: pointer;
+            
+    }
+}
