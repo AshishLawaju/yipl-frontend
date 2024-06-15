@@ -1,0 +1,25 @@
+.search-main {
+  /*  width: 100vw;
+    height: 100vh;
+    background-color: rgba(226, 19, 19, 0.4);
+    position: relative;
+    z-index: 10;
+    border: 2px solid red; */
+
+  .search-content {
+    // position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    height: 55px;
+    color: #62696f;
+
+    border-radius: 12px;
+    width: 40%;
+
+    margin-top: 10%;
+  }
+}

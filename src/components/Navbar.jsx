@@ -6,9 +6,11 @@ import { useState } from "react";
 import I1 from "../assets/I1.png";
 import I2 from "../assets/I2.png";
 import I3 from "../assets/I3.png";
+import Search from "./Search";
 
 const Navbar = () => {
   const [navSubMenu, setNavSubMenu] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
   return (
     <nav className=" navbar">
       <div className="container nav1">
@@ -72,8 +74,14 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <CiSearch className="glass" style={{ fontSize: "20px" }} />
+        <CiSearch
+          className="glass"
+          style={{ fontSize: "20px" }}
+          onClick={()=>setShowSearch(pre=>!pre)}
+        />
       </div>
+
+      {showSearch && <Search setShowSearch={setShowSearch}   />}
     </nav>
   );
 };

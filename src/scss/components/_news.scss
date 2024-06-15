@@ -34,4 +34,19 @@
       gap: 20px;
     }
   }
+
+  .news-button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+
+    .news-button {
+      background-color: transparent;
+      border: 1px solid #1d6fa3;
+      padding: 10px 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
 }
