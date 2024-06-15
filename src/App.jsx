@@ -42,7 +42,7 @@ const App = () => {
           <h3 className="subtitle">
             {" "}
             We aim to stop public funds siphoning off and we have a plan that
-            will help. We <br /> are working at the national and EU levels to
+            will help. We <br hidden/> are working at the national and EU levels to
             advance.{" "}
           </h3>
           <div className="camp-block">

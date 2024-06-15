@@ -7,6 +7,7 @@ import I1 from "../assets/I1.png";
 import I2 from "../assets/I2.png";
 import I3 from "../assets/I3.png";
 import Search from "./Search";
+import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
   const [navSubMenu, setNavSubMenu] = useState(false);
@@ -77,11 +78,43 @@ const Navbar = () => {
         <CiSearch
           className="glass"
           style={{ fontSize: "20px" }}
-          onClick={()=>setShowSearch(pre=>!pre)}
+          onClick={() => setShowSearch((pre) => !pre)}
         />
       </div>
 
-      {showSearch && <Search setShowSearch={setShowSearch}   />}
+      <div className="container smallnav">
+        <div>
+          <img src={logo} alt="logo" />
+        </div>
+
+        {navSubMenu ? (
+          <RxCross1
+            style={{ fontSize: "24px", cursor: "pointer" }}
+            onClick={() => setNavSubMenu((pre) => !pre)}
+          />
+        ) : (
+          <RxHamburgerMenu
+            style={{ fontSize: "24px", cursor: "pointer" }}
+            onClick={() => setNavSubMenu((pre) => !pre)}
+          />
+        )}
+      </div>
+
+      {navSubMenu && (
+        <div
+          className="submenu-main"
+          style={{ scale: `${navSubMenu}?'0':'100'` }}
+        >
+          <ul className="submenu-ul">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Case Studies</li>
+            <li>Resources</li>
+          </ul>
+        </div>
+      )}
+
+      {showSearch && <Search setShowSearch={setShowSearch} />}
     </nav>
   );
 };

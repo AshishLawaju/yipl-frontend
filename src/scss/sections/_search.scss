@@ -11,7 +11,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 
     background-color: white;
     height: 55px;
@@ -21,5 +21,12 @@
     width: 40%;
 
     margin-top: 10%;
+    gap: 8px;
+    
+    input {
+      border: none;
+      height: 24px;
+      outline: none;
+    }
   }
 }

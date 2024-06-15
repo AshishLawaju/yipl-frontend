@@ -1,98 +1,117 @@
 .navbar {
-    position: relative;
-    z-index: 5;
-color: white;
-height: 80px;
-border-bottom: 1px solid white;
-    ul{
-text-decoration: none;   
-list-style-type: none;
-font-family: 'Poppins';    
-display: flex; 
-gap: 40px;
+  position: relative;
+  z-index: 5;
+  color: white;
+  height: 80px;
+  border-bottom: 1px solid white;
+  ul {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins";
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  @media (max-width: 1022px) {
+    .nav1 {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1022px) {
+    .smallnav {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  .nav2 {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .glass {
+    cursor: pointer;
+  }
+
+  .sub-navbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  .sub-navbar-content {
+    padding: 20px 24px 20px 24px;
+    position: absolute;
+    width: 412px;
+    z-index: 3;
+    top: 70%;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .titles {
+      color: black;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: start;
+      z-index: 3;
     }
 
-  
-
-    .nav1{
-height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap:40px;
-        
+    .subtitles {
+      color: #667085;
+      font-size: 14px;
+      font-weight: 400;
+      // border: 1px solid black;
+      z-index: 3;
     }
 
-
-    .nav2{
-
-        display: flex;
-        align-items: center;
-        gap: 5rem;
+    .sub-nav {
+      display: flex;
+      justify-content: start;
+      z-index: 3;
+      gap: 16px;
     }
 
-    .glass{
-        cursor: pointer;
-            
+    .sub-nav-content {
+      display: flex;
+      justify-content: start;
+      z-index: 3;
+      flex-direction: column;
     }
+  }
 
+  /* sub */
 
-    .sub-navbar{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        cursor: pointer;
-        
-        
+  .submenu-main {
+    background-color: rgba(0, 0, 0, 0.814);
+    transition: transform 0.3s ease-in-out;
+    .submenu-ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 64px 10px;
     }
+  }
 
-    .sub-navbar-content{
-        padding:20px 24px 20px 24px ;
-        position: absolute;
-        width: 412px;
-        z-index:3;
-        top:70%
-        ;
-        background-color: white; border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        .titles{
-            color: black;
-            font-size: 16px ;
-            font-weight: 600;
-            text-align: start;
-        z-index:3;
-
-        }
-
-        .subtitles
-        {
-            color:   #667085            ;
-            font-size: 14px ;
-            font-weight: 400;
-            // border: 1px solid black;
-        z-index:3;
-
-            
-
-        }
-
-        .sub-nav{
-            display: flex;
-            justify-content: start;
-        z-index:3;
-        gap: 16px;
-        }
-
-        .sub-nav-content{
-            display: flex;
-            justify-content: start;
-        z-index:3;
-        flex-direction: column;
-        }
+  @media (min-width: 1022px) {
+    .smallnav {
+      display: none;
     }
-
-    
+  }
 }

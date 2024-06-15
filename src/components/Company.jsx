@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick/lib/slider";
@@ -17,14 +18,20 @@ const Company = () => {
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
-        <div
-        className={className}
-        style={{ display:'hidden' }}
-        onClick={onClick}
-      >
-        <VscChevronRight className=""  style={{ width:"35", height:"35px",position
-            :"absolute" ,right:0 ,top:-12 ,fontSize:"35px" ,color:"black" ,fontWeight:300
-         }} />
+      <div className={className} style={{}} onClick={onClick}>
+        <VscChevronRight
+          className="hitter"
+          style={{
+            width: "35",
+            height: "35px",
+            position: "absolute",
+            right: 0,
+            top: -12,
+            fontSize: "35px",
+            color: "black",
+            fontWeight: 300,
+          }}
+        />
       </div>
     );
   }
@@ -34,31 +41,74 @@ const Company = () => {
     return (
       <div
         className={className}
-        style={{ display:'hidden' }}
+        style={{ display: "hidden" }}
         onClick={onClick}
       >
-        <VscChevronLeft className=""  style={{ width:"35", height:"35px",position
-            :"absolute" ,left:-60 ,top:-12 ,fontSize:"35px" ,color:"black" ,fontWeight:300
-         }} />
+        <VscChevronLeft
+          className=""
+          style={{
+            width: "35",
+            height: "35px",
+            position: "absolute",
+            left: -2,
+            top: -12,
+            fontSize: "35px",
+            color: "black",
+            fontWeight: 300,
+          }}
+        />
       </div>
     );
   }
   const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    dots: false,
+    infinite: true,
+    // speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    // centerMode: true,
+    // centerPadding: "60px",
+    autoplay: true,
+    speed: 1000,
+   
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          // dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className=" company-main">
       <div className="container">
         <Slider {...settings}>
           {logoList.map((logo) => (
-            <div key={logo} >
-              <img src={logo} alt=""   />
+            <div key={logo} style={{}} >
+              <img src={logo} alt="company logo" style={{margin:"auto"}}/>
             </div>
           ))}
         </Slider>
