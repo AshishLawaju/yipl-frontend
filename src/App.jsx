@@ -9,6 +9,7 @@ import Company from "./components/Company";
 import News from "./components/News";
 import Resources from "./components/Resources";
 import Contactus from "./components/Contactus";
+import Footer from "./components/Footer";
 const App = () => {
   const campData = [
     {
@@ -65,6 +66,7 @@ const App = () => {
       <News />
       <Resources />
       <Contactus />
+      <Footer/>
     </main>
   );
 };
