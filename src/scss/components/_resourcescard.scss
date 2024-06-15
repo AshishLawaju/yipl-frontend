@@ -1,0 +1,46 @@
+.resourcecard-main {
+  background-color: white;
+//   width: 352px;
+  padding: 36px 28px 18px 28px;
+border-radius: 22px;
+  .resourcescard-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .resourcescard-icon-box {
+      background-color: #f8f1ff;
+      padding: 16px;
+      border-radius: 18px;
+    }
+
+    .resourcescard-icon-title {
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+
+  .resourcecard-title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 22px;
+  }
+
+  .resourcecard-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin-top: 12px;
+  }
+
+  .resourcecard-seemore {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #1d6fa3;
+  }
+}

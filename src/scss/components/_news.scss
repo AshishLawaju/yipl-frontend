@@ -1,0 +1,37 @@
+.news-main {
+  padding: 80px 0;
+  font-family: "Poppins";
+
+  .news-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .news-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .news-lists {
+    margin-top: 32px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+
+    @media (max-width: 1279px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 760px) {
+      grid-template-columns: repeat(1, 1fr);
+
+      justify-items: center;
+      gap: 20px;
+    }
+  }
+}

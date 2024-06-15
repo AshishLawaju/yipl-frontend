@@ -6,6 +6,9 @@ import c2 from "./components/assets/C2.png";
 import c3 from "./components/assets/C3.png";
 import WhoR from "./components/Whoarewe";
 import Company from "./components/Company";
+import News from "./components/News";
+import Resources from "./components/Resources";
+import Contactus from "./components/Contactus";
 const App = () => {
   const campData = [
     {
@@ -58,7 +61,10 @@ const App = () => {
       who are we */}
 
       <WhoR />
-      <Company/>
+      <Company />
+      <News />
+      <Resources />
+      <Contactus />
     </main>
   );
 };
