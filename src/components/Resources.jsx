@@ -43,7 +43,7 @@ const Resources = () => {
                   style={{ color: "#7291FF", fontSize: "32px" }}
                 />
               </div>
-              <h2 className="resourcescard-icon-title">Tool</h2>
+              <h2 className="resourcescard-icon-title">Tool 2</h2>
             </div>
             <h3 className="resourcecard-title">Defence Elvis</h3>
             <h5 className="resourcecard-subtitle">
@@ -65,7 +65,7 @@ const Resources = () => {
               >
                 <FaCheck style={{ color: "#FF5400", fontSize: "26px" }} />
               </div>
-              <h2 className="resourcescard-icon-title">Tool</h2>
+              <h2 className="resourcescard-icon-title">Tool 3</h2>
             </div>
             <h3 className="resourcecard-title">Defence Elvis</h3>
             <h5 className="resourcecard-subtitle">

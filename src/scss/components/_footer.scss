@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   .gcover {
     position: absolute;
     background: linear-gradient(rgba(0, 41, 83, 0.8), rgba(0, 45, 91, 0.8));
@@ -16,8 +16,8 @@
 
   .footer-content {
     position: relative;
-        display: flex;
-        justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     color: white;
 
     .footer-icons-div {
@@ -40,10 +40,25 @@
     .footer-left-content {
       font-weight: 400;
       font-size: 14px;
-      max-width: 299px;
+      // max-width: 299px;
+      width: 30%;
+
       .footer-subtitle {
         margin-top: 20px;
       }
+    }
+
+    @media (max-width: 1023px) {
+      .footer-left-content {
+        // border: 1px solid white;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .footer-content {
+      flex-direction: column;
     }
   }
 
@@ -60,5 +75,21 @@
       white-space: nowrap;
       margin-top: 16px;
     }
+  }
+
+  @media (max-width: 1023px) {
+    .footer-right-content {
+      margin-top: 16px;
+      // border: 1px solid white;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer-main {
+    padding: 48px 0;
   }
 }

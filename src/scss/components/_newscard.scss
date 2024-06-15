@@ -47,3 +47,22 @@
     color: #1d6fa3;
   }
 }
+
+
+@media (max-width: 1023px) {
+  .newscard-main {
+    .newscard-title{
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+
+    .newscard-main {
+      .newscard-title{
+        font-size: 18px;
+      }
+    }
+  
+}

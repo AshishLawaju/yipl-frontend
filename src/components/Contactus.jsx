@@ -7,10 +7,12 @@ const Contactus = () => {
         the form below
       </h4>
 
-      <form action="" className="contact-form-main">
+      <form action="" className="contact-form-main container">
         <div className="contact-double-div">
           <div className="contact-single-div">
-            <label className="contact-form-label" htmlFor="firstname">First name</label>
+            <label className="contact-form-label" htmlFor="firstname">
+              First name
+            </label>
             <input
               className="contact-from-input"
               type="text"
@@ -18,20 +20,31 @@ const Contactus = () => {
             />
           </div>
           <div className="contact-single-div">
-            <label className="contact-form-label" htmlFor="lastname">Last name</label>
+            <label className="contact-form-label" htmlFor="lastname">
+              Last name
+            </label>
             <input className="contact-from-input" type="text" name="lastname" />
           </div>
         </div>
         <div className="contact-single-div">
-          <label className="contact-form-label" htmlFor="email">Email</label>
+          <label className="contact-form-label" htmlFor="email">
+            Email
+          </label>
           <input className="contact-from-input" type="email" name="email" />
         </div>
         <div className="contact-single-div">
-          <label className="contact-form-label" htmlFor="message">Message</label>
-          <textarea className="contact-from-input" style={{height:'117px'}} type="text" name="message" />
+          <label className="contact-form-label" htmlFor="message">
+            Message
+          </label>
+          <textarea
+            className="contact-from-input"
+            style={{ height: "117px" }}
+            type="text"
+            name="message"
+          />
         </div>
 
-        <div  className="resources-button-div1">
+        <div className="resources-button-div1">
           <button type="button" className="resources-button-div2">
             submit
           </button>

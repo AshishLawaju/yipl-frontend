@@ -50,3 +50,15 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .news-main {
+    padding: 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  .news-main {
+    padding: 32px;
+  }
+}
